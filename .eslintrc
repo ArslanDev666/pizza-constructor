@@ -1,0 +1,47 @@
+{
+  "root": true,
+  "parser": "@typescript-eslint/parser",
+  "plugins": ["simple-import-sort", "import"],
+  "rules": {
+    "quotes": ["error", "single"],
+    "semi": "off",
+    "@typescript-eslint/semi": ["off"],
+    "@typescript-eslint/no-empty-interface": [
+      "error",
+      {
+        "allowSingleExtends": true
+      }
+    ],
+    "simple-import-sort/imports": [
+      "error",
+      {
+        "groups": [
+          ["^react", "^@?\\w"],
+          ["^services(/.*|$)"],
+          ["^material-ui(/.*|$)"],
+          ["^modules(/.*|$)"],
+          ["^components(/.*|$)"],
+          ["^layouts(/.*|$)"],
+          ["^store(/.*|$)"],
+          ["^context(/.*|$)"],
+          ["^libs(/.*|$)"],
+          ["^utils(/.*|$)"],
+          ["^ts(/.*|$)"],
+          ["^styles(/.*|$)"],
+          ["^.+\\.s?css$"],
+          ["^assets(/.*|$)"],
+          ["^\\u0000"],
+          ["^\\.\\.(?!/?$)", "^\\.\\./?$"],
+          ["^\\./(?=.*/)(?!/?$)", "^\\.(?!/?$)", "^\\./?$"]
+        ]
+      }
+    ],
+    "simple-import-sort/exports": "error"
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended",
+    "prettier"
+  ]
+}

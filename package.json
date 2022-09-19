@@ -1,7 +1,8 @@
 {
-  "name": "pizza-store",
+  "name": "pizza-constructor",
   "version": "0.1.0",
   "private": true,
+  "author": "Arslan Mustafin <Arslan.mustafin.dev@gmail.com>",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
@@ -16,9 +17,20 @@
     "typescript": "^4.8.3",
     "web-vitals": "^2.1.4"
   },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx,json,css,scss,md}": "prettier --write --ignore-unknown",
+    "*.{scss,sass,css}": "stylelint \"**/*.{scss,sass,css}\" --fix -f verbose",
+    "*.{js,jsx,ts,tsx}": "eslint --fix"
+  },
   "scripts": {
+    "prepare": "husky install",
+    "pre-commit": "lint-staged",
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "lint": "yarn lint:css & yarn lint:js & yarn lint:prettier",
+    "lint:css": "stylelint \"**/*.{scss,sass,css}\" --fix -f verbose",
+    "lint:js": "eslint --fix src/**/*.{js,jsx,ts,tsx}",
+    "lint:prettier": "prettier --write src/**/*.{js,jsx,ts,tsx,json,css,scss,md}",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -39,5 +51,20 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-simple-import-sort": "^8.0.0",
+    "eslint-plugin-sort-imports-es6-autofix": "^0.6.0",
+    "husky": "^8.0.1",
+    "lint-staged": "^13.0.3",
+    "prettier": "^2.7.1",
+    "stylelint": "^14.12.0",
+    "stylelint-config-prettier": "^9.0.3",
+    "stylelint-config-rational-order": "^0.1.2",
+    "stylelint-config-standard": "^28.0.0",
+    "stylelint-config-standard-scss": "^5.0.0",
+    "stylelint-order": "^5.0.0",
+    "stylelint-prettier": "^2.0.0"
   }
 }
