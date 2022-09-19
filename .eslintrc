@@ -19,6 +19,7 @@
           ["^react", "^@?\\w"],
           ["^services(/.*|$)"],
           ["^material-ui(/.*|$)"],
+          ["^pages(/.*|$)"],
           ["^modules(/.*|$)"],
           ["^components(/.*|$)"],
           ["^layouts(/.*|$)"],
