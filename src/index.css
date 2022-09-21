@@ -1,3 +1,19 @@
+:root {
+  --color-neutral-1: #ebf4f7;
+  --color-neutral-2: #f0f8fb;
+  --color-neutral-border: #d3dee5;
+  --color-neutral-text: #b2bbc1;
+  --color-sky: #29f3f3;
+  --color-green: #24ee42;
+  --color-red: #f13d4c;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
   margin: 0;
 

@@ -1,0 +1,141 @@
+.pizza-preview {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+
+  background-color: var(--color-neutral-2);
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  width: 800px;
+  height: 800px;
+  border: 2px solid var(--color-neutral-border);
+  border-radius: 50%;
+
+  background-color: var(--color-neutral-2);
+  transform: translate(-50%, -50%);
+}
+
+.size {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 1;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding-top: 36px;
+  border: 2px solid var(--color-neutral-border);
+  border-radius: 50%;
+
+  transform: translate(-50%, -50%);
+}
+
+.size::after {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  z-index: -1;
+
+  height: 50%;
+  border-left: 4px dotted var(--color-neutral-border);
+
+  transform: translateX(-50%);
+
+  content: "";
+}
+
+.size:nth-of-type(2n) {
+  background-color: var(--color-neutral-1);
+}
+
+.size:nth-of-type(2n + 1) {
+  background-color: var(--color-neutral-2);
+}
+
+.size:nth-of-type(1) {
+  border: none;
+
+  background-color: transparent;
+}
+
+.size span {
+  position: relative;
+
+  color: var(--color-neutral-text);
+  font-size: 18px;
+  font-family: "Suez One", serif;
+}
+
+.large {
+  width: 800px;
+  height: 800px;
+}
+
+.medium {
+  width: 600px;
+  height: 600px;
+}
+
+.small {
+  width: 400px;
+  height: 400px;
+}
+
+.pizza-image {
+  position: relative;
+
+  width: 400px;
+  height: 400px;
+
+  transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+  pointer-events: none;
+}
+
+.pizza-large {
+  transform: scale(2) rotate(30deg);
+  filter: drop-shadow(0 0.5rem 1rem var(--color-sky));
+}
+
+.pizza-medium {
+  transform: scale(1.5) rotate(60deg);
+  filter: drop-shadow(0 0.5rem 1rem var(--color-green));
+}
+
+.pizza-small {
+  transform: scale(1) rotate(0deg);
+  filter: drop-shadow(0 0.5rem 1rem var(--color-red));
+}
+
+.pizza-image img {
+  width: 100%;
+  height: 100%;
+}
+
+.loading-image {
+  position: relative;
+
+  width: 150px;
+  height: 150px;
+
+  animation: rotating 5s ease-in-out 0s infinite;
+}
+
+@keyframes rotating {
+  from {
+    transform: rotate(0);
+  }
+
+  to {
+    transform: rotate(calc(360 * 3deg));
+  }
+}
