@@ -16,7 +16,7 @@ const PizzaPreview: FC<IPizzaPreviewProps> = ({ size }) => {
   };
 
   return (
-    <div className={styles['pizza-preview']}>
+    <>
       <div className={styles.container}>
         <div className={`${styles.size} ${styles.large}`}>
           <span>Large</span>
@@ -41,7 +41,7 @@ const PizzaPreview: FC<IPizzaPreviewProps> = ({ size }) => {
       >
         <img src={TEST_PIZZA[size]} alt={`Pizza ${size}`} onLoad={handleLoadImage} />
       </div>
-    </div>
+    </>
   );
 };
 
