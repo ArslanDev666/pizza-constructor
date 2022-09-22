@@ -5,8 +5,9 @@
   --color-neutral-text: #b2bbc1;
   --color-text: #020001;
   --color-sky: #29f3f3;
-  --color-green: #24ee42;
+  --color-green: #5bc52d;
   --color-red: #f13d4c;
+  --color-white: #fff;
 }
 
 * {

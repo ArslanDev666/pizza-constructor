@@ -35,6 +35,14 @@
   letter-spacing: 4px;
 }
 
+.tabs {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: flex-start;
+  margin-top: 80px;
+}
+
 .cart {
   display: flex;
   justify-content: flex-end;

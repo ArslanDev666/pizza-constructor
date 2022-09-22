@@ -1,4 +1,4 @@
-import React, { FC } from 'react';
+import React, { FC, memo } from 'react';
 import cn from 'classnames';
 
 import styles from './Title.module.css';
@@ -14,4 +14,4 @@ const Title: FC<ITitleProps> = ({ children, className, ...props }) => {
   );
 };
 
-export default Title;
+export default memo(Title);

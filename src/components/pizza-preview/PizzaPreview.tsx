@@ -1,10 +1,10 @@
-import React, { FC, useState } from 'react';
+import React, { FC, memo, useState } from 'react';
 
 import { TEST_PIZZA } from 'utils/constants';
 
 import styles from './PizzaPreview.module.css';
 
-import { ReactComponent as PizzaIcon } from 'assets/pizza-svgrepo-com.svg';
+import { ReactComponent as PizzaIcon } from 'assets/pizza.svg';
 
 import { IPizzaPreviewProps } from './types';
 
@@ -45,4 +45,4 @@ const PizzaPreview: FC<IPizzaPreviewProps> = ({ size }) => {
   );
 };
 
-export default PizzaPreview;
+export default memo(PizzaPreview);

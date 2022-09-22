@@ -117,7 +117,7 @@
   width: 150px;
   height: 150px;
 
-  animation: rotating 5s ease-in-out 0s infinite;
+  animation: rotating 3.5s ease-in-out 0s infinite;
 
   user-select: none;
 }
@@ -128,6 +128,6 @@
   }
 
   to {
-    transform: rotate(calc(360 * 3deg));
+    transform: rotate(calc(360 * 1deg));
   }
 }
