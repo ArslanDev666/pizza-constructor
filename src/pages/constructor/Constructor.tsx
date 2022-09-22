@@ -2,7 +2,7 @@ import React, { FC, useState } from 'react';
 
 import PizzaPreview from 'components/pizza-preview';
 import { TPizzaSizes } from 'components/pizza-preview/types';
-import Title from 'components/Title';
+import Title from 'components/title';
 
 import styles from './Constructor.module.css';
 
