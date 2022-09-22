@@ -1,0 +1,52 @@
+.cart {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+  padding: 40px;
+
+  border-radius: 25px;
+
+  text-align: center;
+
+  background-color: rgb(255 255 255 / 90%);
+  box-shadow: rgb(50 50 93 / 25%) 0 13px 27px -5px, rgb(0 0 0 / 30%) 0 8px 16px -8px;
+}
+
+.price {
+  font-weight: 400;
+  font-size: 28px;
+}
+
+.weight {
+  color: var(--color-neutral-text);
+  font-size: 18px;
+}
+
+.add {
+  width: 100%;
+  max-width: 280px;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 25px;
+
+  color: var(--color-white);
+  font-size: 16px;
+
+  background-color: var(--color-orange);
+  box-shadow: rgb(0 0 0 / 10%) 0 20px 25px -5px, rgb(0 0 0 / 4%) 0 10px 10px -5px;
+  cursor: pointer;
+
+  transition: opacity 0.25s ease-in-out, box-shadow 0.25s ease-in-out;
+}
+
+.add:hover {
+  box-shadow: rgb(0 0 0 / 7%) 0 1px 2px, rgb(0 0 0 / 7%) 0 2px 4px,
+    rgb(0 0 0 / 7%) 0 4px 8px, rgb(0 0 0 / 7%) 0 8px 16px,
+    rgb(0 0 0 / 7%) 0 16px 32px, rgb(0 0 0 / 7%) 0 32px 64px;
+  opacity: 0.8;
+}
+
+.add:focus {
+  outline: none;
+}

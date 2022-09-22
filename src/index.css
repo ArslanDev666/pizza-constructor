@@ -7,6 +7,7 @@
   --color-sky: #29f3f3;
   --color-green: #5bc52d;
   --color-red: #f13d4c;
+  --color-orange: #fd6a04;
   --color-white: #fff;
 }
 
@@ -27,4 +28,12 @@ body {
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
 }

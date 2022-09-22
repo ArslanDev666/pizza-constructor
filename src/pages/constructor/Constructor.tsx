@@ -1,5 +1,6 @@
 import React, { FC, useCallback, useState } from 'react';
 
+import CartInfo from 'components/cart-info';
 import PizzaPreview from 'components/pizza-preview';
 import { TPizzaSizes } from 'components/pizza-preview/types';
 import Tab from 'components/tab';
@@ -64,7 +65,7 @@ const Constructor: FC = () => {
           </div>
         </div>
         <div className={styles.cart}>
-          <div className="cart-info"></div>
+          <CartInfo price={75} weight={450} />
         </div>
         <div className={styles.ingredients}></div>
       </div>
