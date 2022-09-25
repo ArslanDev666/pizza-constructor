@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/pizza-constructor/static/css/main.e8a03166.css",
+    "main.js": "/pizza-constructor/static/js/main.37d44f10.js",
+    "static/media/pepperoni.png": "/pizza-constructor/static/media/pepperoni.dd6d0da988b27a23b82e.png",
+    "static/media/mozzarella.png": "/pizza-constructor/static/media/mozzarella.742d9aa2f83778d4aba9.png",
+    "static/media/tomato.png": "/pizza-constructor/static/media/tomato.5d62632527e6153c80ba.png",
+    "static/media/cheese.png": "/pizza-constructor/static/media/cheese.ff4ad46ffc3f3c214060.png",
+    "static/media/sweet-pepper.png": "/pizza-constructor/static/media/sweet-pepper.e80af210a646f8e30728.png",
+    "static/media/italian-grass.png": "/pizza-constructor/static/media/italian-grass.8b4009cbe6e720f12931.png",
+    "static/media/pickled-cucumbers.png": "/pizza-constructor/static/media/pickled-cucumbers.af24f48cba91b5c005bb.png",
+    "static/media/mushrooms.png": "/pizza-constructor/static/media/mushrooms.2f72c6af6d19fe3bcfa8.png",
+    "static/media/parmesan.png": "/pizza-constructor/static/media/parmesan.6bb1d86a674b7217beb3.png",
+    "static/media/red-onion.png": "/pizza-constructor/static/media/red-onion.ef837d2b51104e9305b1.png",
+    "static/media/ham.png": "/pizza-constructor/static/media/ham.e58a997655046d5a587a.png",
+    "static/media/sauce.svg": "/pizza-constructor/static/media/sauce.72aea95863213758a027a3a56a57304d.svg",
+    "static/media/pizza.svg": "/pizza-constructor/static/media/pizza.74ecae2a75fc983dd45386558ce9150f.svg",
+    "static/media/tomato.svg": "/pizza-constructor/static/media/tomato.7b3d650068fd41374220afda526f3c16.svg",
+    "index.html": "/pizza-constructor/index.html",
+    "static/media/arrow-left.svg": "/pizza-constructor/static/media/arrow-left.8c70e33e7dbbb26acff3276857c5a1b5.svg",
+    "static/media/arrow-right.svg": "/pizza-constructor/static/media/arrow-right.b400ec2ecb089e57c869ca9591ce3c43.svg",
+    "main.e8a03166.css.map": "/pizza-constructor/static/css/main.e8a03166.css.map",
+    "main.37d44f10.js.map": "/pizza-constructor/static/js/main.37d44f10.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e8a03166.css",
+    "static/js/main.37d44f10.js"
+  ]
+}
