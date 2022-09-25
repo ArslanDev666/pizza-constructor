@@ -1,0 +1,95 @@
+.ingredient {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.image {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  padding: 20px;
+  border-radius: 6px;
+  overflow: hidden;
+
+  background-color: var(--color-gray);
+}
+
+.image img {
+  height: 75%;
+  object-fit: contain;
+}
+
+.weight {
+  position: absolute;
+  right: 15px;
+  bottom: 15px;
+
+  padding: 3px 10px;
+  border: 0;
+  border-radius: 6px;
+
+  color: var(--color-text);
+  font-weight: 400;
+  font-size: 14px;
+
+  background-color: rgb(255 255 255 / 90%);
+}
+
+.count {
+  display: flex;
+  gap: 10px;
+}
+
+.count input {
+  width: 100%;
+  border: 3px solid var(--color-gray);
+  border-radius: 5px;
+
+  font-size: 18px;
+  text-align: center;
+
+  appearance: textfield;
+}
+
+.count input::-webkit-outer-spin-button,
+.count input::-webkit-inner-spin-button {
+  margin: 0;
+
+  appearance: none;
+}
+
+.count button {
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 5px;
+
+  color: var(--color-white);
+  font-size: 18px;
+
+  background-color: var(--color-blue);
+  cursor: pointer;
+
+  transition: background-color 0.25s ease-in-out, color 0.25s ease-in-out,
+    transform 0.25s ease-in-out;
+}
+
+.count button:active {
+  transform: scale(0.9);
+}
+
+.count button:disabled {
+  color: var(--color-text);
+
+  background-color: var(--color-gray);
+  transform: scale(0.9);
+}
+
+.title {
+  font-size: 18px;
+}

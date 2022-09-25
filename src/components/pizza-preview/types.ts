@@ -3,3 +3,9 @@ export interface IPizzaPreviewProps {
 }
 
 export type TPizzaSizes = 'large' | 'medium' | 'small';
+
+export type TPizzaParams = {
+  image: string;
+  price: number;
+  weight: number;
+};

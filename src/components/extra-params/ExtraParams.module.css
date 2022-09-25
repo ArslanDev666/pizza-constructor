@@ -1,0 +1,17 @@
+.params {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 30px 40px;
+  border-radius: 25px;
+
+  background-color: rgb(255 255 255 / 80%);
+  box-shadow: rgb(0 0 0 / 25%) 0 25px 50px -12px;
+}
+
+.params > h3 {
+  font-family: Arial, Helvetica, sans-serif;
+}

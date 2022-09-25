@@ -1,0 +1,47 @@
+.carousel {
+  opacity: 0;
+
+  transition: opacity 0.25s ease-in-out;
+}
+
+.carousel.show {
+  opacity: 1;
+}
+
+.arrow {
+  height: 100px;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+
+  background-color: var(--color-blue);
+  cursor: pointer;
+  opacity: 1;
+
+  transition: opacity 0.25s ease-in-out, transform 0.25s ease-in-out;
+}
+
+.arrow:hover {
+  opacity: 0.85;
+}
+
+.arrow:active {
+  transform: scale(0.9);
+}
+
+.arrow:focus {
+  outline: none;
+  opacity: 0.85;
+}
+
+.arrow:disabled {
+  background-color: var(--color-neutral-text);
+  transform: scale(0.9);
+}
+
+.arrow svg {
+  width: 35px;
+  height: auto;
+
+  fill: var(--color-white);
+}
