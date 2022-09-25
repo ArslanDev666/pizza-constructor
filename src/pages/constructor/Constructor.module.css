@@ -1,10 +1,17 @@
 .container {
   position: relative;
 
-  width: 100%;
-  height: 100vh;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
 
   background-color: var(--color-neutral-2);
+}
+
+.wrapper {
+  display: flex;
+  width: 100%;
+  max-width: 1440px;
 }
 
 .pizza-preview {
@@ -13,9 +20,6 @@
   left: 0;
   z-index: 0;
 
-  display: flex;
-  align-items: center;
-  justify-content: center;
   width: 100%;
   height: 100%;
 }
@@ -25,6 +29,9 @@
 
   display: grid;
   grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  justify-content: center;
+  width: 100%;
   padding: 50px;
 }
 
@@ -35,12 +42,18 @@
   letter-spacing: 4px;
 }
 
+.left-side {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: flex-start;
+}
+
 .tabs {
   display: flex;
   flex-direction: column;
   gap: 40px;
   align-items: flex-start;
-  margin-top: 80px;
 }
 
 .cart {
@@ -51,4 +64,5 @@
 
 .ingredients {
   grid-column: 2 span;
+  align-self: flex-end;
 }

@@ -1,6 +1,6 @@
 import React, { FC, memo, useState } from 'react';
 
-import { TEST_PIZZA } from 'utils/constants';
+import { TEST_PIZZA_PARAMS } from 'utils/constants';
 
 import styles from './PizzaPreview.module.css';
 
@@ -16,17 +16,15 @@ const PizzaPreview: FC<IPizzaPreviewProps> = ({ size }) => {
   };
 
   return (
-    <>
-      <div className={styles.container}>
-        <div className={`${styles.size} ${styles.large}`}>
-          <span>Large</span>
-        </div>
-        <div className={`${styles.size} ${styles.medium}`}>
-          <span>Medium</span>
-        </div>
-        <div className={`${styles.size} ${styles.small}`}>
-          <span>Small</span>
-        </div>
+    <div className={styles.container}>
+      <div className={`${styles.size} ${styles.large}`}>
+        <span>Large</span>
+      </div>
+      <div className={`${styles.size} ${styles.medium}`}>
+        <span>Medium</span>
+      </div>
+      <div className={`${styles.size} ${styles.small}`}>
+        <span>Small</span>
       </div>
 
       {isLoadingImages && (
@@ -39,9 +37,9 @@ const PizzaPreview: FC<IPizzaPreviewProps> = ({ size }) => {
         className={`${styles['pizza-image']} ${styles[`pizza-${size}`]}`}
         hidden={isLoadingImages}
       >
-        <img src={TEST_PIZZA[size]} alt={`Pizza ${size}`} onLoad={handleLoadImage} />
+        <img src={TEST_PIZZA_PARAMS[size].image} alt={`Pizza ${size}`} onLoad={handleLoadImage} />
       </div>
-    </>
+    </div>
   );
 };
 

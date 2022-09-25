@@ -5,10 +5,12 @@
   --color-neutral-text: #b2bbc1;
   --color-text: #020001;
   --color-sky: #29f3f3;
+  --color-blue: #7cb1d3;
   --color-green: #5bc52d;
   --color-red: #f13d4c;
   --color-orange: #fd6a04;
   --color-white: #fff;
+  --color-gray: #f4f4f4;
 }
 
 * {
