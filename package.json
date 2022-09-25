@@ -2,6 +2,7 @@
   "name": "pizza-constructor",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://arslandev666.github.io/pizza-constructor/",
   "author": "Arslan Mustafin <Arslan.mustafin.dev@gmail.com>",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
@@ -34,6 +35,8 @@
     "lint:css": "stylelint \"**/*.{scss,sass,css}\" --fix -f verbose",
     "lint:js": "eslint --fix src/**/*.{js,jsx,ts,tsx}",
     "lint:prettier": "prettier --write src/**/*.{js,jsx,ts,tsx,json,css,scss,md}",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -59,6 +62,7 @@
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-simple-import-sort": "^8.0.0",
     "eslint-plugin-sort-imports-es6-autofix": "^0.6.0",
+    "gh-pages": "^4.0.0",
     "husky": "^8.0.1",
     "lint-staged": "^13.0.3",
     "prettier": "^2.7.1",
